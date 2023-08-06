@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Lato:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* make child padding and border include 100% width of element not outside  */
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; /* smooth scroll */
+}
+header{
+    background-color: #1A2238;
+    width: 100%;
+    position: fixed; /* scroll with fixed nav bar */
+    z-index: 999; /* nothing will hide nav bar while scrolling */
+    display: flex;
+    justify-content: space-between; /* make space between them */
+    align-items: center;
+    padding: 10px 200px; /* top and bottom equal first value and right and left equal second value */
+}
+.logo{
+    text-decoration: none; /* remove link line */
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8m; /* 1 em default equal 16 px */
+}
+.logo span{
+    color: #FF6A3D;
+}
+.navigation a
+{
+    text-decoration: none; /* remove link line */
+    color: white;
+    font-weight: 500;
+    padding-left: 30px;
+    font-size: 1.1em; /* 1 em default equal 16 px */
+}
+.navigation a:hover
+{
+    color: #F4DB7D;
+}
+section{
+    padding: 100px 200px;
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh; /* vh mean view port or view of the page */
+    display: flex;
+    align-items: center;
+    background-color: #1A2238;
+    background-size:cover ; /* make image take whole cover */
+    background-attachment: fixed; /* image fixed while scroll */
+    background-position: center; /* default center center */
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span:first-child{ /* inline cant make margin */
+    color: #9DAAF2;
+}
+.main h2 span:not(:first-of-type){ /* inline cant make margin */
+    color: #FF6A3D;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block; /* allow margin */
+}
+.main h3 {
+    color: white;
+    font-size:2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.button {
+    color: #FBFFFE;
+    
+    background-color: #9DAAF2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;  
+    transition: 0.7s ease;
+}
+.button:hover{
+    background-color: #7e88c2;
+    transform: scale(1.1);
+    color:#F4DB7D;
+}
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+section#service.cards{
+    background-color: white;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    font-size: 2.2em;
+    color: #FF6A3D;
+    font-weight: 800;
+    margin-bottom: 30px; /* take space between it and the content below it */
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* each card size still the same under any circumstance */
+}
+.card{
+    background-color: #1A2238;
+    width:21.25em;
+    border-radius: 10px;
+    padding: 25px; /* default padding in all direction inside element */
+    margin:15px ;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition:0.7s ease;
+}
+.card:hover .icon{
+    color: #F4DB7D;
+}
+.icon{
+    color: #9DAAF2;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin:10px;
+}
+.content .card .info span{
+    color:#FF6A3D;
+}
+.info p{
+    color: white;
+}
+.projects{
+    background-color:#1A2238;
+}
+.project .title{
+    font-weight: 800;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    border: 1px solid white;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-title span{
+    color: #F4DB7D;
+}
+.project-card:hover .project-image{
+    opacity: 0.5;
+}
+.project-image img{
+    width: 100%; /* fit in the card area*/
+}
+.project-info{
+    padding:1em;
+}
+.project-category{
+    font-size:0.8em;
+    color:#FF6A3D;
+    font-weight: 800;
+}
+.project-title{
+    display:flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight:800;
+    margin-top: 10px;
+}
+.project-title span{
+    color: white;
+}
+.more-details{
+    text-decoration: none;
+    color:#9DAAF2;
+}
+.more-details:hover{
+    color:#7e88c2;
+}
+.contact .icon{
+    font-size:4.5em;
+}
+.contact .info h3{
+    color:#FF6A3D;
+}
+.contact .info .p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color:#1A2238;
+    color:white;
+    padding:2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #FF6A3D;
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding:0 12px 0 0 ;
+}
+/* media quieries mean in particular width or particular length I need all classes act in particular behavior*/
+@media (max-width:1023px){ /* follow the rules if width from 0 - 1023 px and so on*/
+    header{
+    padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left:10px;
+    }
+    .title{
+        font-size:1.8em;
+    }
+    section{
+        padding :80px 20px;
+    }
+    .main-content h2 {
+        font-size :1em;
+    }
+    .main-content h3{
+        font-size:1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (max-width:641px)
+{
+    body{
+        font-size:12px; /* 1 em = 12px not 16 as default */
+    }
+    .main-content h2 {
+        font-size: 0.8;
+    }
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px)
+{
+    body{
+        font-size:10px; /* 1 em = 10px not 16 as default */
+    }
+    
+}
