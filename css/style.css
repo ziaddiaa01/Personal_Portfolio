@@ -100,7 +100,7 @@ section{
     padding-right: 30px;
 }
 section#service.cards{
-    background-color: white;
+    background-color: grey;
 }
 .title{
     display:flex;
