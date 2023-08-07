@@ -99,8 +99,8 @@ section{
     font-size: 1.7em;
     padding-right: 30px;
 }
-section#service.cards{
-    background-color: white;
+.cards{
+    background-color: rgb(214, 214, 214);
 }
 .title{
     display:flex;
